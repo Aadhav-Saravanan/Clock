@@ -8,10 +8,18 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="container">
-        <h3 id="time"></h3>
-        <h5 id="date"></h5>
+    <div class="container">
+        <div id="container">
+            <h3 id="time"></h3>
+            <h5 id="date"></h5>
+        </div> 
+        <a href="stopwatch.html"><img src="stopwatch.png" class="clock-1"></a>
     </div>
-    <script src="app.js"></script>
+    <script>
+        setTimeout(function() {
+          window.location.href = "https://da-clock.netlify.app/clock.html";
+        }, 0);
+    </script>
+    <script src="clock.js"></script>
 </body>
 </html>
