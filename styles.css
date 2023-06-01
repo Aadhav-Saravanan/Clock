@@ -1,4 +1,4 @@
-@import url('https://api.fonts.coollabs.io.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://api.fonts.coollabs.io/css2?family=Poppins:wght@500&display=swap');
 
 *{
     font-family: 'Poppins', sans-serif;
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 95vh;
 }
 
 #date{
@@ -40,3 +40,20 @@ body {
         font-size: 97px;
     }
 }
+
+#timey{
+    font-size: 120px;
+    color: aliceblue;
+}
+
+.header{
+    font-size: 70px;
+    color: aliceblue;
+}
+
+.clock-1 {
+    float: right;
+    overflow: hidden;
+  }
+  
+  
