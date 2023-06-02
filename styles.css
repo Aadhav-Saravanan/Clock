@@ -56,4 +56,36 @@ body {
     overflow: hidden;
   }
   
+.btn-container{
+    display: inline;
+}
+
+#pauseBtn {
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    color: aliceblue;
+    outline: none;
+    border: solid 2px aliceblue;
+    transition: 0.1s ease;
+  }
   
+#playBtn {
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    color: aliceblue;
+    border: solid 2px aliceblue;
+    transition: 0.1s ease;
+}
+
+
+#pauseBtn:hover{
+    height: 33px;
+    width: 103px;
+}
+
+#playBtn:hover{
+    height: 33px;
+    width: 103px;
+}

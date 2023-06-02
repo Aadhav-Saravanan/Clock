@@ -8,13 +8,34 @@ let timer = minutes * 60 + seconds;
 
 const countDown = document.getElementById("timey");
 
-const intervalId = setInterval(updateCountDown, 1000);
+// Add these global variables to keep track of the timer state
+let isPaused = false;
+let intervalId;
+
+// Start the timer immediately
+intervalId = setInterval(updateCountDown, 1000);
+
+function pauseTimer() {
+  if (isPaused) return; // Ignore if already paused
+
+  clearInterval(intervalId);
+  isPaused = true;
+}
+
+function playTimer() {
+  if (!isPaused) return; // Ignore if not paused
+
+  isPaused = false;
+  intervalId = setInterval(updateCountDown, 1000);
+}
 
 function updateCountDown() {
+  if (isPaused) return; // Ignore if paused
+
   const minutes = Math.floor(timer / 60);
   let seconds = timer % 60;
   seconds = seconds < 10 ? '0' + seconds : seconds;
-  document.getElementById("timey").innerHTML = `${minutes}:${seconds}`;
+  countDown.innerHTML = `${minutes}:${seconds}`;
 
   if (timer <= 0) {
     clearInterval(intervalId);
