@@ -44,3 +44,17 @@ function updateCountDown() {
 
   timer--;
 }
+
+setInterval(() => {
+  let k = new Date();
+  let timeElement = document.getElementById("time2");
+  let dateElement = document.getElementById("date2");
+
+  timeElement.innerHTML = k.toLocaleTimeString();
+  dateElement.innerHTML =
+    k.getDate() 
+    + " / " + 
+    (k.getMonth() + 1)
+    + " / " + 
+    k.getFullYear();
+}, 1000);

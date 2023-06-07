@@ -6,8 +6,8 @@ setInterval(() => {
     timeElement.innerHTML = d.toLocaleTimeString();
     dateElement.innerHTML =
       d.getDate() 
-      + "/" + 
+      + " / " + 
       (d.getMonth() + 1)
-      + "/" + 
+      + " / " + 
       d.getFullYear();
   }, 1000);

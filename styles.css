@@ -89,3 +89,25 @@ body {
     height: 33px;
     width: 103px;
 }
+
+#time-container{
+    float: left;
+
+}
+
+#time2{
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 0px;
+    padding: 10px;
+}
+
+#date2{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    padding: 15px;
+    margin-top: 60px;
+}
